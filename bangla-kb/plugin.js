@@ -213,7 +213,7 @@ window.phonetic = {
 })(jQuery);
 	
 function enableEn(){
-	var $iframe = $("#details_ifr").contents();
+	var $iframe = $("[id*='_ifr']").contents();
 	$iframe.find("#tinymce").bnKb({
 	  'switchkey': {"webkit":"k","mozilla":"y","safari":"k","chrome":"k","msie":"y"},
 	  'driver': window.basic
@@ -221,7 +221,7 @@ function enableEn(){
 }
 
 function enablePhonetic(){
-	var $iframe = $("#details_ifr").contents();
+	var $iframe = $("[id*='_ifr']").contents();
 	$iframe.find("#tinymce").bnKb({
 	  'switchkey': {"webkit":"k","mozilla":"y","safari":"k","chrome":"k","msie":"y"},
 	  'driver': window.phonetic
@@ -229,7 +229,7 @@ function enablePhonetic(){
 }
 	
 function enableProbhat(){
-	var $iframe = $("#details_ifr").contents();
+	var $iframe = $("[id*='_ifr']").contents();
 	$iframe.find("#tinymce").bnKb({
 	  'switchkey': {"webkit":"k","mozilla":"y","safari":"k","chrome":"k","msie":"y"},
 	  'driver': window.probhat
@@ -237,7 +237,7 @@ function enableProbhat(){
 }
 
 function enableBijoy(){
-	var $iframe = $("#details_ifr").contents();
+	var $iframe = $("[id*='_ifr']").contents();
 	$iframe.find("#tinymce").bnKb({
 	  'switchkey': {"webkit":"k","mozilla":"y","safari":"k","chrome":"k","msie":"y"},
 	  'driver': window.bijoy
